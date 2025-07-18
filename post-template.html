@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title - Harpreet Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="post-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Post description goes here">
+    <meta property="og:title" content="Post Title">
+    <meta property="og:description" content="Post description goes here">
+    <meta property="og:image" content="https://example.com/post-image.jpg">
+    <meta property="og:url" content="https://yoursite.com/posts/post-slug">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><a href="index.html">Harpreet Singh</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#posts" class="nav-link">Posts</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main post-main">
+        <article class="post">
+            <div class="post-header">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Post Title</span>
+                    </nav>
+                    
+                    <h1 class="post-title">Getting Started with Modern Web Development</h1>
+                    
+                    <div class="post-meta">
+                        <time class="post-date" datetime="2024-01-15">January 15, 2024</time>
+                        <span class="post-read-time">5 min read</span>
+                        <div class="post-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-image-container">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=600&fit=crop" 
+                     alt="Post featured image" 
+                     class="post-featured-image">
+            </div>
+
+            <div class="post-content">
+                <div class="container">
+                    <div class="post-body">
+                        <p class="post-intro">
+                            Welcome to the world of modern web development! In this comprehensive guide, we'll explore the essential technologies and best practices that every web developer should know in 2024.
+                        </p>
+
+                        <h2>What is Modern Web Development?</h2>
+                        <p>
+                            Modern web development encompasses a wide range of technologies, frameworks, and methodologies that have evolved to create better, faster, and more maintainable web applications. Unlike traditional web development, modern approaches focus on component-based architectures, responsive design, and performance optimization.
+                        </p>
+
+                        <h3>Key Technologies</h3>
+                        <ul>
+                            <li><strong>HTML5:</strong> The latest version of HTML with semantic elements and improved accessibility</li>
+                            <li><strong>CSS3:</strong> Advanced styling with Flexbox, Grid, and custom properties</li>
+                            <li><strong>JavaScript ES6+:</strong> Modern JavaScript features like arrow functions, destructuring, and modules</li>
+                            <li><strong>Frontend Frameworks:</strong> React, Vue.js, Angular for building interactive UIs</li>
+                            <li><strong>Build Tools:</strong> Webpack, Vite, Parcel for optimizing and bundling code</li>
+                        </ul>
+
+                        <h2>Getting Started</h2>
+                        <p>
+                            To begin your journey in modern web development, you'll need to set up your development environment. Here's what you'll need:
+                        </p>
+
+                        <ol>
+                            <li>A modern code editor (VS Code, WebStorm, or Sublime Text)</li>
+                            <li>Node.js and npm for package management</li>
+                            <li>Git for version control</li>
+                            <li>A modern web browser with developer tools</li>
+                        </ol>
+
+                        <h3>Sample Code</h3>
+                        <pre><code class="language-javascript">// Modern JavaScript example
+const fetchUserData = async (userId) => {
+    try {
+        const response = await fetch(`/api/users/${userId}`);
+        const userData = await response.json();
+        return userData;
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        throw error;
+    }
+};
+
+// Usage
+fetchUserData(123)
+    .then(user => console.log('User:', user))
+    .catch(error => console.error('Failed to load user:', error));</code></pre>
+
+                        <h2>Best Practices</h2>
+                        <p>
+                            Following best practices is crucial for creating maintainable and scalable web applications. Here are some key principles to keep in mind:
+                        </p>
+
+                        <blockquote>
+                            <p>"Code is read much more often than it is written. Make sure your code is readable and well-documented."</p>
+                        </blockquote>
+
+                        <h3>Performance Optimization</h3>
+                        <p>
+                            Performance should be a top priority in modern web development. Consider these optimization techniques:
+                        </p>
+
+                        <ul>
+                            <li>Minimize HTTP requests</li>
+                            <li>Optimize images and use modern formats (WebP, AVIF)</li>
+                            <li>Implement lazy loading for images and components</li>
+                            <li>Use CDNs for static assets</li>
+                            <li>Minimize and compress CSS and JavaScript files</li>
+                        </ul>
+
+                        <h2>Conclusion</h2>
+                        <p>
+                            Modern web development is an exciting and rapidly evolving field. By mastering these fundamental technologies and best practices, you'll be well-equipped to build amazing web applications that provide great user experiences.
+                        </p>
+
+                        <p>
+                            Remember that learning web development is a continuous journey. Stay curious, keep experimenting, and don't be afraid to try new technologies and approaches.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-footer">
+                <div class="container">
+                    <div class="post-navigation">
+                        <div class="post-nav-item post-nav-prev">
+                            <span class="post-nav-label">Previous Post</span>
+                            <a href="#" class="post-nav-title">Understanding CSS Grid Layout</a>
+                        </div>
+                        <div class="post-nav-item post-nav-next">
+                            <span class="post-nav-label">Next Post</span>
+                            <a href="#" class="post-nav-title">JavaScript Async/Await Guide</a>
+                        </div>
+                    </div>
+
+                    <div class="post-share">
+                        <h3>Share this post</h3>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn share-twitter">Twitter</a>
+                            <a href="#" class="share-btn share-facebook">Facebook</a>
+                            <a href="#" class="share-btn share-linkedin">LinkedIn</a>
+                            <a href="#" class="share-btn share-copy">Copy Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Harpreet Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
